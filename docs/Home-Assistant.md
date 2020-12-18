@@ -651,7 +651,7 @@ Used for a configured [PIR Sensor](PIR-Motion-Sensors) and requires this rule:
 
 **Required Commands**
 ```console
-Rule1 on Switch1#State=1 do Publish stat/hall/MOTION ON endon on Switch1#State=1 do Publish stat/hall/MOTION OFF endon
+Rule1 on Switch1#State=1 do Publish stat/hall/MOTION ON endon on Switch1#State=0 do Publish stat/hall/MOTION OFF endon
 Rule1 1
 ```
 ```yaml
